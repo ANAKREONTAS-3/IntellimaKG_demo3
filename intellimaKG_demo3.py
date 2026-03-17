@@ -1,9 +1,9 @@
 import streamlit as st
 import datetime
 import json
-from openai import openai
+import openai
 
-client = openai.api_key = st.secrets["OPENAI_API_KEY"]
+openai.api_key = st.secrets["OPENAI_API_KEY"]
 
 st.set_page_config(page_title="IntellimaKG v3", page_icon="🚀")
 
