@@ -3,7 +3,7 @@ import datetime
 import json
 import openai
 
-client = OpenAI(api_key=st.secrets["OPENAI_API_KEY"])
+client = openai.api_key = st.secrets["OPENAI_API_KEY"]
 
 st.set_page_config(page_title="IntellimaKG v3", page_icon="🚀")
 
@@ -123,7 +123,7 @@ Generate:
 
 
 
-        response = client.chat.completions.create(
+        response = openai.chatcompletions.create(
 
             model="gpt-4o-mini",
 
@@ -133,7 +133,7 @@ Generate:
 
 
 
-        result = response.choices[0].message.content
+        result = response["choices"[0]["message"["content"]
 
 
 
