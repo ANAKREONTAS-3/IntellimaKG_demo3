@@ -1,7 +1,7 @@
 import streamlit as st
 import datetime
 import json
-import openai
+from openai import openai
 
 client = openai.api_key = st.secrets["OPENAI_API_KEY"]
 
